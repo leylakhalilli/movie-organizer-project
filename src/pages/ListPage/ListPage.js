@@ -14,14 +14,14 @@ class ListPage extends Component {
                     if (resp.ok) {
                         return resp.json();
                     } else {
-                        alert('Список не найден :(')
+                        alert('List not found :(')
                     };
                 })
                 .then(data => {
                     if (data) {
                         this.setState({ movies: data.movies, title: data.title })
                     } else {
-                        alert('Список не найден :(')
+                        alert('List not found :(')
                     }
                 })
         }

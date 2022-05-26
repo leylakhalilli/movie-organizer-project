@@ -26,13 +26,13 @@ class SearchBox extends Component {
             <div className="search-box">
                 <form className="search-box__form" onSubmit={this.searchBoxSubmitHandler}>
                     <label className="search-box__form-label">
-                        Искать фильм по названию:
+                        Movies name:
                         <input
                             type="text"
                             className="search-box__form-input"
                             value={this.state.searchLine}
                             onChange={this.searchMovies}
-                            placeholder="For example — Batman"
+                            placeholder="For example Titanic"
                         />
                     </label>
                     <button
@@ -40,7 +40,7 @@ class SearchBox extends Component {
                         className="search-box__form-submit"
                         disabled={!searchLine}
                     >
-                        Искать
+                       Search
                     </button>
                 </form>
             </div>

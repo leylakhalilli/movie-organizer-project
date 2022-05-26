@@ -72,7 +72,7 @@ class Favorites extends Component {
                 <input value={this.state.title}
                     onChange={this.handleChange}
                     className="favorites__name"
-                    placeholder='Новый список'
+                    placeholder='List name for movies'
                 />
                 <ul className="favorites__list">
                     {this.state.favorits.map((item) => {
@@ -81,9 +81,9 @@ class Favorites extends Component {
 
                 </ul>
                 <button type="button" className={this.state.showLink ? 'favorites__save' : 'favorites__save-none'}
-                    onClick={() => this.saveFavList()} disabled={!this.state.title}>Сохранить список</button>
+                    onClick={() => this.saveFavList()} disabled={!this.state.title}>Save</button>
                 <div className={this.state.showLink ? 'favorites-link' : ''}>
-                    <Link to={`/list/${this.state.listId}`}>Перейти к списку фильмов</Link>
+                    <Link to={`/list/${this.state.listId}`}>Film siyahısına keçin</Link>
                 </div>
             </div>
 
